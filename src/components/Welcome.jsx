@@ -14,13 +14,13 @@ const renderText = (text, className, baseWeight = 400) => {
 			className={className}
 			style={{ fontVariationSettings: `'wght' ${baseWeight}` }}
 		>
-			{char === "" ? "\u00A0" : char}
+			{char === " " ? "\u00A0" : char}
 		</span>
 	));
 };
 
 const setupTextHover = (container, type) => {
-	if (!container) return;
+	if (!container) return () => {};
 
 	const letters = container.querySelectorAll("span");
 	const { min, max, default: base } = FONT_WEIGHTS[type];
