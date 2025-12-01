@@ -1,5 +1,5 @@
 import React from "react";
-import WindowControls from "#components";
+import { WindowControls } from "#components";
 import { Search } from "lucide-react";
 import WindowWrapper from "#hoc/WindowWrapper";
 import { locations } from "#constants";
@@ -12,7 +12,7 @@ const Finder = () => {
 	const { activeLocation, setActiveLocation } = useLocationStore();
 
 	const openItem = (item) => {
-		if (item.fileType === "pdf") return useWindow("resume");
+		if (item.fileType === "pdf") return openWindow("resume");
 		if (item.fileType === "folder") return setActiveLocation(item);
 		if (["fig", "url"].includes(item.fileType) && item.href)
 			return window.open(item.href, "_blank");
