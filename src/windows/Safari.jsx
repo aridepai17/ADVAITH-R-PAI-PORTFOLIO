@@ -1,4 +1,6 @@
 import { WindowControls } from "#components";
+import { blogPosts } from "#constants";
+import WindowWrapper from "#hoc/WindowWrapper";
 import React from "react";
 import {
 	ChevronLeft,
@@ -9,6 +11,7 @@ import {
 	Plus,
 	Copy,
 	MoveRight,
+	Search,
 } from "lucide-react";
 
 const Safari = () => {
@@ -17,7 +20,7 @@ const Safari = () => {
 			<div id="window-header">
 				<WindowControls target="safari" />
 
-				<PanelLeft clasName="ml-10 icon" />
+				<PanelLeft className="ml-10 icon" />
 
 				<div className="flex items-center gap-1 ml-5">
 					<ChevronLeft className="icon" />
@@ -41,7 +44,7 @@ const Safari = () => {
 				<div className="flex items-center gap-5">
 					<Share className="icon" />
 					<Plus className="icon" />
-					<Copy classnmae="icon" />
+					<Copy className="icon" />
 				</div>
 			</div>
 
