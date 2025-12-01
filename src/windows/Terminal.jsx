@@ -2,6 +2,7 @@ import WindowControls from "#components/WindowControls";
 import { techStack } from "#constants";
 import WindowWrapper from "#hoc/WindowWrapper";
 import React from "react";
+import { Check, Flag } from "lucide-react";
 
 const Terminal = () => {
 	return (
@@ -28,12 +29,12 @@ const Terminal = () => {
 							<Check className="check" size={20} />
 							<h3>{category}</h3>
 							<ul>
-								{items.map((item, i) => {
+								{items.map((item, i) => (
 									<li key={i}>
 										{item}
 										{i < items.length - 1 ? "," : ""}
-									</li>;
-								})}
+									</li>
+								))}
 							</ul>
 						</li>
 					))}
@@ -41,7 +42,7 @@ const Terminal = () => {
 
 				<div className="footnote">
 					<p>
-						<Check size={20} /> 5 of 5 stacks loaded successfully
+						<Check size={20} /> {techStack.length} of {techStack.length} loaded successfully
 					</p>
 
 					<p className="text-black">
