@@ -1,16 +1,19 @@
 import { navLinks, navIcons } from "#constants";
+import useWindowStore from "#store/window";
 import dayjs from "dayjs";
 
 const Navbar = () => {
+	const { openWindow } = useWindowStore();
+
 	return (
 		<nav>
 			<div>
 				<img src="/images/logo.svg" alt="Logo" />
-				<p className="font-bold">Advaith R Pai's Portfolio</p>
+				<p className="font-black">Advaith R Pai's Portfolio</p>
 
 				<ul>
-					{navLinks.map(({ id, name }) => (
-						<li key={id}>
+					{navLinks.map(({ id, name, type }) => (
+						<li key={type} onClick={() => openWindow(type)}>
 							<p>{name}</p>
 						</li>
 					))}
