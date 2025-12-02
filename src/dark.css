@@ -1,9 +1,16 @@
-/* Dark mode overrides */
-.dark-mode body {
+/* Dark mode overrides – only invert main UI, not wallpaper */
+.dark-mode #root {
     filter: invert(1) hue-rotate(180deg);
 }
 
-.dark-mode img,
-.dark-mode video {
+/* Re-invert media inside root so images/videos look normal */
+.dark-mode #root img,
+.dark-mode #root video {
     filter: invert(1) hue-rotate(180deg);
+}
+
+/* Keep hero welcome section untouched */
+.dark-mode #welcome,
+.dark-mode #welcome * {
+    filter: none !important;
 }
