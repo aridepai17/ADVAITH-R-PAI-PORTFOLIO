@@ -12,5 +12,5 @@
 /* Keep hero welcome section untouched */
 .dark-mode #welcome,
 .dark-mode #welcome * {
-    filter: none !important;
+    filter: invert(1) hue-rotate(180deg) !important;
 }
