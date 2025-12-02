@@ -1,0 +1,7 @@
+/* Hover / scale-up for nav icons */
+.icon-hover {
+    transition: transform 0.2s ease;
+}
+.icon-hover:hover {
+    transform: scale(1.75);
+}
