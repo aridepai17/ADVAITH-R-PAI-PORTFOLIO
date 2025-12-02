@@ -36,7 +36,7 @@ const Safari = () => {
 						<input
 							type="text"
 							placeholder="Search or enter website name"
-							className="flex-1"
+							className="flex-1 font-geist font-black"
 						/>
 					</div>
 				</div>
@@ -59,12 +59,13 @@ const Safari = () => {
 							</div>
 
 							<div className="content">
-								<p>{date}</p>
+								<p className="font-geist font-black">{date}</p>
 								<h3>{title}</h3>
 								<a
 									href={link}
 									target="_blank"
 									rel="noopener noreferrer"
+                                    className="font-black font-geist"
 								>
 									Check out the full post{" "}
 									<MoveRight className="icon-hover" />

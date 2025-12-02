@@ -9,25 +9,25 @@ const Terminal = () => {
 		<>
 			<div id="window-header">
 				<WindowControls target="terminal" />
-				<h2>Tech Stack</h2>
+				<h2 className="font-geist font-black">Tech Stack</h2>
 			</div>
 
 			<div className="techstack">
-				<p>
-					<span className="font-black">@advaith % </span>
+				<p className="font-geist font-black">
+					<span>@advaith % </span>
 					show tech stack
 				</p>
 
-				<div className="label">
+				<div className="label font-geist font-black">
 					<p className="w-32">Category</p>
 					<p>Technologies</p>
 				</div>
 
-				<ul className="content">
+				<ul className="content font-geist font-black">
 					{techStack.map(({ category, items }) => (
 						<li key={category} className="flex items-center">
 							<Check className="check" size={20} />
-							<h3>{category}</h3>
+							<h3 className="font-geist font-black">{category}</h3>
 							<ul>
 								{items.map((item, i) => (
 									<li key={i}>
@@ -40,7 +40,7 @@ const Terminal = () => {
 					))}
 				</ul>
 
-				<div className="footnote">
+				<div className="footnote font-geist font-black">
 					<p>
 						<Check size={20} /> {techStack.length} of {techStack.length} loaded successfully
 					</p>

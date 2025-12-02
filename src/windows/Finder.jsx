@@ -26,7 +26,7 @@ const Finder = () => {
 				key={item.id}
 				onClick={() => setActiveLocation(item)}
 				className={clsx(
-					"flex items-center gap-2 px-2 py-1 rounded cursor-pointer hover:bg-gray-200", // Added hover effect
+					"flex items-center gap-2 px-2 py-1 rounded cursor-pointer hover:bg-gray-200", 
 					item.id === activeLocation.id
 						? "bg-blue-100 text-blue-600"
 						: "text-gray-700"
@@ -37,7 +37,7 @@ const Finder = () => {
 					className="w-4 h-4 object-contain"
 					alt={item.name}
 				/>
-				<p className="text-sm font-medium truncate">{item.name}</p>
+				<p className="text-sm font-semibold truncate">{item.name}</p>
 			</li>
 		));
 
@@ -45,7 +45,6 @@ const Finder = () => {
 		<>
 			<div id="window-header">
 				<WindowControls target="finder" />
-				{/* Visual Search Bar */}
 				<div className="flex items-center gap-2 text-gray-400 bg-gray-100/50 px-2 py-0.5 rounded ml-4 border border-gray-200 w-full max-w-[200px]">
 					<Search size={14} />
 					<span className="text-xs">Search</span>
@@ -54,16 +53,16 @@ const Finder = () => {
 
 			<div className="bg-white flex h-full overflow-hidden rounded-b-lg">
 				{/* Sidebar */}
-				<div className="sidebar w-48 bg-gray-50/80 p-3 border-r border-gray-200 h-full shrink-0 backdrop-blur-sm">
+				<div className="sidebar w-[210px] bg-gray-50/80 p-3 border-r border-gray-200 h-full shrink-0 backdrop-blur-sm">
 					<div className="mb-4">
-						<h3 className="px-2 text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">
+						<h3 className="px-2 text-xs text-gray-500 mb-2 uppercase tracking-wider">
 							Favorites
 						</h3>
 						<ul>{renderList(Object.values(locations))}</ul>
 					</div>
 
 					<div>
-						<h3 className="px-2 text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wider">
+						<h3 className="px-2 text-xs text-gray-500 mb-2 uppercase tracking-wider">
 							My Work
 						</h3>
 						<ul>

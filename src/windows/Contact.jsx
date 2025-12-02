@@ -7,7 +7,7 @@ const Contact = () => {
 		<>
 			<div id="window-header">
 				<WindowControls target="contact" />
-				<h2>Contact Me</h2>
+				<h2 className="font-black font-geist">Contact Me</h2>
 			</div>
 
 			<div className="p-5 space-y-5">
@@ -17,7 +17,7 @@ const Contact = () => {
 					className="w-20 rounded-full"
 				/>
 
-				<h3>Let's Connect</h3>
+				<h3>Let's Connect !</h3>
 				<p>
 					Got an idea? A bug to squash? Or just wanna talk tech? I'm
 					all in.
@@ -33,7 +33,7 @@ const Contact = () => {
 								rel="noopener noreferrer"
 							>
 								<img src={icon} alt={text} className="size-5" />
-								<p>{text}</p>
+								<p className="font-black font-geist">{text}</p>
 							</a>
 						</li>
 					))}
