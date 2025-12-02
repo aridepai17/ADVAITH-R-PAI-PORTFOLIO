@@ -54,7 +54,9 @@ const Photos = () => {
 
                 <div className="flex-1 p-4 overflow-y-auto">
                     <div className="grid grid-cols-4 gap-4 auto-rows-min">
-                        {gallery.map(({ id, img }) => (
+                        {gallery
+                            .filter(({ album }) => album === activeAlbum.id)
+                            .map(({ id, img }) => (
                             <div
                                 key={id}
                                 onClick={() => openImage(img)}
