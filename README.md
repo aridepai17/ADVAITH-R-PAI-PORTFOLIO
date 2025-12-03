@@ -1,8 +1,8 @@
-# Advaith R Pai - Interactive MacOSPortfolio
+# Advaith R Pai - Interactive MacOS Portfolio
 
 A cutting-edge, interactive portfolio website that meticulously replicates the MacOS desktop experience within a modern web application. This portfolio showcases advanced React development skills through an innovative desktop metaphor that provides visitors with an unforgettable and engaging way to explore professional work, projects, and skills.
 
-![Portfolio Preview](pics/homepage.png)
+![Portfolio Preview](pics/home.png)
 
 ## 🌟 Overview
 
