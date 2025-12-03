@@ -12,7 +12,7 @@ const Contact = () => {
 
 			<div className="p-5 space-y-5">
 				<img
-					src="/images/adrian.jpg"
+					src="/images/favorites5.jpg"
 					alt="Adrian"
 					className="w-20 rounded-full"
 				/>
@@ -22,7 +22,7 @@ const Contact = () => {
 					Got an idea? A bug to squash? Or just wanna talk tech? I'm
 					all in.
 				</p>
-				<p>contact@jsmastery.pro</p>
+				<p>Contact: @advaithdepai26@gmail.com</p>
 
 				<ul>
 					{socials.map(({ id, bg, link, icon, text }) => (
