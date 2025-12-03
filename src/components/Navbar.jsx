@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 
 const Navbar = () => {
 	const { openWindow } = useWindowStore();
-    const { toggleTheme } = useThemeStore();
+	const { toggleTheme } = useThemeStore();
 
 	return (
 		<nav>
@@ -14,7 +14,7 @@ const Navbar = () => {
 				<p>Advaith R Pai's Portfolio</p>
 
 				<ul>
-					{navLinks.map(({ id, name, type }) => (
+					{navLinks.map(({ name, type }) => (
 						<li key={type} onClick={() => openWindow(type)}>
 							<p>{name}</p>
 						</li>
@@ -24,24 +24,31 @@ const Navbar = () => {
 
 			<div>
 				<ul>
-					{navIcons.map(({ id, img }) =>
-                        id === 4 ? (
-                            <li key={id} onClick={toggleTheme}>
-                                <img src={img} className="icon-hover" alt="mode-toggle" />
-                            </li>
-                        ) : (
-                            <li key={id}>
-                                <img
-                                    src={img}
-                                    className="icon-hover"
-                                    alt={`icon-${id}`}
-                                />
-                            </li>
-                        )
-                    )}
+					{navIcons.map(({ id, img }) => (
+						<li
+							key={id}
+							onClick={id === 4 ? toggleTheme : undefined}
+						>
+							<img
+								src={img}
+								alt={id === 4 ? "mode-toggle" : `icon-${id}`}
+								className={`
+                                    w-5 h-5 transition-all duration-200 
+                                    hover:scale-110 hover:brightness-125 
+                                    ${
+										id === 4
+											? "cursor-pointer"
+											: "cursor-default"
+									}
+                                `}
+							/>
+						</li>
+					))}
 				</ul>
 
-				<time className="font-geist font-black">{dayjs().format("ddd MMM D h:mm A")}</time>
+				<time className="font-geist font-black">
+					{dayjs().format("ddd MMM D h:mm A")}
+				</time>
 			</div>
 		</nav>
 	);
