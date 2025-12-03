@@ -75,7 +75,7 @@ const dockApps = [
 ];
 
 const blogPosts = [
-	{
+	/* {
 		id: 1,
 		date: "Sep 2, 2025",
 		title: "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
@@ -96,6 +96,7 @@ const blogPosts = [
 		image: "/images/blog3.png",
 		link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
 	},
+    */
 ];
 
 const techStack = [
@@ -103,25 +104,26 @@ const techStack = [
 		category: "Frontend",
 		items: ["React.js", "Next.js", "TypeScript"],
 	},
-	{
+	/* {
 		category: "Mobile",
 		items: ["React Native", "Expo"],
-	},
+	}, 
+    */
 	{
 		category: "Styling",
-		items: ["Tailwind CSS", "Sass", "CSS"],
+		items: ["Tailwind CSS", "CSS"],
 	},
 	{
 		category: "Backend",
-		items: ["Node.js", "Express", "NestJS", "Hono"],
+		items: ["Node.js"],
 	},
 	{
 		category: "Database",
-		items: ["MongoDB", "PostgreSQL"],
+		items: ["MongoDB", "PostgreSQL", "MySQL"],
 	},
 	{
 		category: "Dev Tools",
-		items: ["Git", "GitHub", "Docker"],
+		items: ["Git", "GitHub", "Vercel", "Cursor IDE"],
 	},
 ];
 
@@ -131,29 +133,30 @@ const socials = [
 		text: "Github",
 		icon: "/icons/github.svg",
 		bg: "#f4656b",
-		link: "https://github.com/JavaScript-Mastery-Pro",
+		link: "https://github.com/aridepai17",
 	},
-	{
+	/* {
 		id: 2,
 		text: "Platform",
 		icon: "/icons/atom.svg",
 		bg: "#4bcb63",
 		link: "https://jsmastery.com/",
 	},
+	*/
 	{
 		id: 3,
 		text: "Twitter/X",
 		icon: "/icons/twitter.svg",
 		bg: "#ff866b",
-		link: "https://x.com/jsmasterypro",
+		link: "https://x.com/rpaiv17",
 	},
-	{
+	/* {
 		id: 4,
 		text: "LinkedIn",
 		icon: "/icons/linkedin.svg",
 		bg: "#05b6f6",
 		link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
-	},
+	}, */
 ];
 
 const photosLinks = [
@@ -187,22 +190,67 @@ const photosLinks = [
 const gallery = [
 	{
 		id: 1,
-		img: "/images/gal1.png",
+		img: "/images/library1.jpg",
+		album: 1,
+	},
+	{
+		id: 101,
+		img: "/images/library2.jpg",
+		album: 1,
+	},
+	{
+		id: 1001,
+		img: "/images/library3.jpg",
 		album: 1,
 	},
 	{
 		id: 2,
-		img: "/images/gal2.png",
+		img: "/images/memories1.jpg",
 		album: 2,
 	},
 	{
 		id: 3,
-		img: "/images/gal3.png",
+		img: "/images/places1.jpg",
+		album: 3,
+	},
+	{
+		id: 301,
+		img: "/images/places2.jpg",
 		album: 3,
 	},
 	{
 		id: 4,
-		img: "/images/gal4.png",
+		img: "/images/people1.jpg",
+		album: 4,
+	},
+	{
+		id: 401,
+		img: "/images/people2.jpg",
+		album: 4,
+	},
+	{
+		id: 5,
+		img: "/images/favorites1.jpg",
+		album: 5,
+	},
+	{
+		id: 50,
+		img: "/images/favorites2.jpg",
+		album: 5,
+	},
+	{
+		id: 500,
+		img: "/images/favorites3.jpg",
+		album: 5,
+	},
+	{
+		id: 5000,
+		img: "/images/favorites4.jpg",
+		album: 5,
+	},
+	{
+		id: 5001,
+		img: "/images/favorites5.jpg",
 		album: 5,
 	},
 ];
@@ -228,52 +276,40 @@ const WORK_LOCATION = {
 		// ▶ Project 1
 		{
 			id: 5,
-			name: "Nike Ecommerce Website Application",
+			name: "DijkstraFlow",
 			icon: "/images/folder.png",
 			kind: "folder",
 			position: "top-10 left-5", // icon position inside Finder
-			windowPosition: "top-[5vh] left-5", // optional: Finder window position
+			windowPosition: "top-[1vh] left-3", // optional: Finder window position
 			children: [
 				{
 					id: 1,
-					name: "Nike Project.txt",
+					name: "DijkstraFlow.txt",
 					icon: "/images/txt.png",
 					kind: "file",
 					fileType: "txt",
 					position: "top-5 left-10",
 					description: [
-						"The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-						"Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-						"Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-						"It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+						"DijkstraFlow is a comprehensive, interactive web application designed to help students and developers understand algorithms and data structures through real-time visualizations. Whether you're preparing for technical interviews, studying computer science, or simply curious about how algorithms work, DijkstraFlow provides an intuitive and engaging learning experience.",
 					],
 				},
 				{
 					id: 2,
-					name: "nike.com",
+					name: "DijkstraFlow",
 					icon: "/images/safari.png",
 					kind: "file",
 					fileType: "url",
-					href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+					href: "https://dijkstraflowalgo.vercel.app/",
 					position: "top-10 right-20",
 				},
 				{
 					id: 4,
-					name: "nike.png",
+					name: "DijkstraFlow.png",
 					icon: "/images/image.png",
 					kind: "file",
 					fileType: "img",
 					position: "top-52 right-80",
-					imageUrl: "/images/project-1.png",
-				},
-				{
-					id: 5,
-					name: "Design.fig",
-					icon: "/images/plain.png",
-					kind: "file",
-					fileType: "fig",
-					href: "https://google.com",
-					position: "top-60 right-20",
+					imageUrl: "/images/homepage.png",
 				},
 			],
 		},
@@ -281,15 +317,15 @@ const WORK_LOCATION = {
 		// ▶ Project 2
 		{
 			id: 6,
-			name: "AI Resume Analyzer",
+			name: "Selectra",
 			icon: "/images/folder.png",
 			kind: "folder",
-			position: "top-52 right-80",
-			windowPosition: "top-[20vh] left-7",
+			position: "top-10 left-5",
+			windowPosition: "top-[20vh] left-5",
 			children: [
 				{
 					id: 1,
-					name: "AI Resume Analyzer Project.txt",
+					name: "Selectra.txt",
 					icon: "/images/txt.png",
 					kind: "file",
 					fileType: "txt",
@@ -303,30 +339,21 @@ const WORK_LOCATION = {
 				},
 				{
 					id: 2,
-					name: "ai-resume-analyzer.com",
+					name: "Selectra",
 					icon: "/images/safari.png",
 					kind: "file",
 					fileType: "url",
-					href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+					href: "https://selectra-nine.vercel.app/",
 					position: "top-20 left-20",
 				},
 				{
 					id: 4,
-					name: "ai-resume-analyzer.png",
+					name: "Selectra.png",
 					icon: "/images/image.png",
 					kind: "file",
 					fileType: "img",
 					position: "top-52 left-80",
-					imageUrl: "/images/project-2.png",
-				},
-				{
-					id: 5,
-					name: "Design.fig",
-					icon: "/images/plain.png",
-					kind: "file",
-					fileType: "fig",
-					href: "https://google.com",
-					position: "top-60 left-5",
+					imageUrl: "/images/resumereview.png",
 				},
 			],
 		},
@@ -334,52 +361,40 @@ const WORK_LOCATION = {
 		// ▶ Project 3
 		{
 			id: 7,
-			name: "Food Delivery App",
+			name: "Caffiend",
 			icon: "/images/folder.png",
 			kind: "folder",
-			position: "top-10 left-80",
-			windowPosition: "top-[33vh] left-7",
+			position: "top-10 left-5",
+			windowPosition: "top-[33vh] left-6",
 			children: [
 				{
 					id: 1,
-					name: "Food Delivery App Project.txt",
+					name: "Caffiend.txt",
 					icon: "/images/txt.png",
 					kind: "file",
 					fileType: "txt",
 					position: "top-5 left-10",
 					description: [
-						"Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-						"Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-						"Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-						"It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+						"Caffiend is a web application designed for coffee enthusiasts to track their caffeine consumption and spending habits. The app allows users to monitor their coffee intake, calculate current caffeine levels in their system, and analyze their coffee consumption patterns over time.",
 					],
 				},
 				{
 					id: 2,
-					name: "food-delivery-app.com",
+					name: "Caffiend",
 					icon: "/images/safari.png",
 					kind: "file",
 					fileType: "url",
-					href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+					href: "https://caffiendcoffeetracker.netlify.app/",
 					position: "top-10 right-20",
 				},
 				{
 					id: 4,
-					name: "food-delivery-app.png",
+					name: "Caffiend.png",
 					icon: "/images/image.png",
 					kind: "file",
 					fileType: "img",
 					position: "top-52 right-80",
-					imageUrl: "/images/project-3.png",
-				},
-				{
-					id: 5,
-					name: "Design.fig",
-					icon: "/images/plain.png",
-					kind: "file",
-					fileType: "fig",
-					href: "https://google.com",
-					position: "top-60 right-20",
+					imageUrl: "/images/caffiendapp2.png",
 				},
 			],
 		},
@@ -395,45 +410,42 @@ const ABOUT_LOCATION = {
 	children: [
 		{
 			id: 1,
-			name: "me.png",
+			name: "Me",
 			icon: "/images/image.png",
 			kind: "file",
 			fileType: "img",
 			position: "top-10 left-5",
-			imageUrl: "/images/adrian.jpg",
+			imageUrl: "/images/favorites5.jpg",
 		},
 		{
 			id: 2,
-			name: "casual-me.png",
+			name: "Casual",
 			icon: "/images/image.png",
 			kind: "file",
 			fileType: "img",
 			position: "top-28 right-72",
-			imageUrl: "/images/adrian-2.jpg",
+			imageUrl: "/images/favorites2.jpg",
 		},
 		{
 			id: 3,
-			name: "conference-me.png",
+			name: "Work",
 			icon: "/images/image.png",
 			kind: "file",
 			fileType: "img",
 			position: "top-52 left-80",
-			imageUrl: "/images/adrian-3.jpeg",
+			imageUrl: "/images/people1.jpg",
 		},
 		{
 			id: 4,
-			name: "about-me.txt",
+			name: "About Me.txt",
 			icon: "/images/txt.png",
 			kind: "file",
 			fileType: "txt",
 			position: "top-60 left-5",
 			subtitle: "Meet the Developer Behind the Code",
-			image: "/images/adrian.jpg",
+			image: "/images/library1.jpg",
 			description: [
-				"Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-				"I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-				"I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-				"Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+				"If you’ve ever wondered what happens when a computer science student has too much coffee and not enough sleep, you’ve come to the right place! This collection of projects is the result of countless late-night coding sessions, questionable decisions, and an occasional existential crisis.",
 			],
 		},
 	],
@@ -452,11 +464,11 @@ const RESUME_LOCATION = {
 			icon: "/images/pdf.png",
 			kind: "file",
 			fileType: "pdf",
-			
 		},
 	],
 };
 
+/*
 const TRASH_LOCATION = {
 	id: 4,
 	type: "trash",
@@ -484,12 +496,12 @@ const TRASH_LOCATION = {
 		},
 	],
 };
+*/
 
 export const locations = {
 	work: WORK_LOCATION,
 	about: ABOUT_LOCATION,
 	resume: RESUME_LOCATION,
-	trash: TRASH_LOCATION,
 };
 
 const INITIAL_Z_INDEX = 1000;
