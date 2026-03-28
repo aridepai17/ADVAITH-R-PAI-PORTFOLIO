@@ -102,7 +102,7 @@ const blogPosts = [
 const techStack = [
 	{
 		category: "Frontend",
-		items: ["React.js", "Next.js", "TypeScript"],
+		items: ["JavaScript", "React.js", "Next.js", "TypeScript"],
 	},
 	/* {
 		category: "Mobile",
@@ -361,10 +361,50 @@ const WORK_LOCATION = {
 		// ▶ Project 3
 		{
 			id: 7,
+			name: "Servd",
+			icon: "/images/folder.png",
+			kind: "folder",
+			position: "top-30 left-5",
+			windowPosition: "top-[52vh] left-12",
+			children: [
+				{
+					id: 1,
+					name: "Servd.txt",
+					icon: "/images/txt.png",
+					kind: "file",
+					fileType: "txt",
+					position: "top-5 left-10",
+					description: [
+						"An AI-powered kitchen assistant that transforms how you cook at home. Snap a photo of your fridge, and Google Gemini Vision AI identifies ingredients while generating personalized recipes tailored to what you have. Browse thousands of dishes by cuisine and category, build your digital cookbook, and reduce food waste",
+					],
+				},
+				{
+					id: 2,
+					name: "Servd",
+					icon: "/images/safari.png",
+					kind: "file",
+					fileType: "url",
+					href: "https://servdai.vercel.app/",
+					position: "top-10 right-20",
+				},
+				{
+					id: 4,
+					name: "Servd.png",
+					icon: "/images/image.png",
+					kind: "file",
+					fileType: "img",
+					position: "top-52 right-80",
+					imageUrl: "/images/servd.png",
+				},
+			],
+		},
+        // ▶ Project 4
+		{
+			id: 8,
 			name: "Caffiend",
 			icon: "/images/folder.png",
 			kind: "folder",
-			position: "top-10 left-5",
+			position: "top-40 left-5",
 			windowPosition: "top-[37vh] left-12",
 			children: [
 				{
@@ -398,6 +438,48 @@ const WORK_LOCATION = {
 				},
 			],
 		},
+        // ▶ Project 4
+		{
+			id: 9,
+			name: "Signalist",
+			icon: "/images/folder.png",
+			kind: "folder",
+			position: "top-40 left-5",
+			windowPosition: "top-[69vh] left-12",
+			children: [
+				{
+					id: 1,
+					name: "Signalist.txt",
+					icon: "/images/txt.png",
+					kind: "file",
+					fileType: "txt",
+					position: "top-5 left-10",
+					description: [
+						"Track real-time stock prices, build personalized watchlists, get AI-powered market insights, and receive daily news summaries - all in one sleek, dark-themed dashboard.",
+					],
+				},
+				{
+					id: 2,
+					name: "Signalist",
+					icon: "/images/safari.png",
+					kind: "file",
+					fileType: "url",
+					href: "https://signalistrealtimestocks.vercel.app/",
+					position: "top-10 right-20",
+				},
+				{
+					id: 4,
+					name: "Signalist.png",
+					icon: "/images/image.png",
+					kind: "file",
+					fileType: "img",
+					position: "top-52 right-80",
+					imageUrl: "/images/signalist.png",
+				},
+			],
+		},
+
+
 	],
 };
 
